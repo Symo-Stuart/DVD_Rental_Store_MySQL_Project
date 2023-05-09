@@ -1,1 +1,1 @@
-# E-Commerce-KPIs-Analysis
+# DVD_Rental_Store_MySQL_Project
