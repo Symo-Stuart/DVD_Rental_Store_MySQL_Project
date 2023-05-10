@@ -7,7 +7,7 @@ This MySQL project involves answering 8 questions that require joining data from
 My partner and I want to come by each of the stores in person and meet the managers. Please send over the managers’ names at each store, with the full address of each property (street address, district, city, and country please).
 
 #### `Thought Process`
-- We need to select the full name of the manager from the staff table. Then, we need to select the address information from the address table. We can perform an inner join to join both tables for the result output.
+- We need to select the full name of the manager from the staff table. Then, we need to select the address information from the address table. We can perform an inner join to join the tables for the result output.
 
 #### `Query 1`
 <img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%201.png">
@@ -39,7 +39,7 @@ From the same list of films you just pulled, please roll that data up and provid
 Similarly, we want to understand how diversified the inventory is in terms of replacement cost. We want to see how big of a hit it would be if a certain category of film became unpopular at a certain store. We would like to see the number of films, as well as the average replacement cost, and total replacement cost, sliced by store and film category.
 
 #### `Thought Process`
-- Our Query requires information from 2 tables that don't have a common key to join them. We know that the requirement of joining 2 tables is having a common field, so, how do we do this? We use what's called a bridge join. This is where we use a 3rd table in our join that cointains common fields with both the tables we primarily want to join. In this case the film_category table which joins on the film table through film_id and on the category table through category_id hence acting as a bridge.
+- Our Query requires information from 2 tables that don't have a common key to join them. We know that the requirement of joining 2 tables is having a common field, so, how do we do this? We use what's called a bridge join. This is where we use a 3rd table in our join clause that cointains common fields with both the tables we primarily want to join. In this case the film_category table which joins on the film table through film_id and on the category table through category_id hence acting as a bridge.
 
 #### `Query 4`
 <img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%204.png">
