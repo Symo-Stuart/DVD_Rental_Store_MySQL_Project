@@ -10,7 +10,7 @@ My partner and I want to come by each of the stores in person and meet the manag
 - We need to select the full name of the manager from the staff table. Then, we need to select the address information from the address table. We can perform an inner join to join the tables for the result output.
 
 #### `Query 1`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%201.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%201.png">
 
 ### **Question 2**
 #### `Problem Statement`
@@ -22,7 +22,7 @@ I would like to get a better understanding of all of the inventory that would co
 - We have to join the inventory table on the film table for our out put.
 
 #### `Query 2`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%202.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%202.png">
 
 ### **Question 3**
 #### `Problem Statement`
@@ -32,7 +32,7 @@ From the same list of films you just pulled, please roll that data up and provid
 - From the list we just pulled up, all we need to do is add a count of the inventory_ids then group them by store_id and rating.
 
 ### `Query 3`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%203.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%203.png">
 
 ### **Question 4**
 #### `Problem Statement`
@@ -42,7 +42,7 @@ Similarly, we want to understand how diversified the inventory is in terms of re
 - Our Query requires information from 2 tables that don't have a common key to join them. We know that the requirement of joining 2 tables is having a common field, so, how do we do this? We use what's called a bridge join. This is where we use a 3rd table in our join clause that cointains common fields with both the tables we primarily want to join. In this case the film_category table which joins on the film table through film_id and on the category table through category_id hence acting as a bridge.
 
 #### `Query 4`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%204.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%204.png">
 
 ### **Question 5**
 #### `Problem Statement`
@@ -52,7 +52,7 @@ We want to make sure you folks have a good handle on who your customers are. Ple
 - Same scenario as the query before. In this case the city table acts as the bridge between the address and the country tables.
 
 #### `Query 5`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%205.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%205.png">
 
 ### **Question 6**
 #### `Problem Statement`
@@ -62,7 +62,7 @@ We would like to understand how much your customers are spending with you, and a
 - The most important aspect to note here is the order of the out put. We are required to have the most valuable customers on top. Meaning we need our output to be ordered by the total amount a given customer has spent on our store Descending .
 
 #### `Query 6`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%206.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%206.png">
 
 ### **Question 7**
 #### `Problem Statement`
@@ -72,7 +72,7 @@ My partner and I would like to get to know your board of advisors and any curren
 - In this query we are required to do a union instead of a join. The top requirement for a union is that our tables have to have the same number of columnns with similar data types. In this case our advisor table has only 2 columnbs hence replacing the third column with a "null" in order for the union to execute.
 
 #### `Query 7`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%207.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%207.png">
 
 ### **Question 8**
 #### `Problem Statement`
@@ -82,4 +82,4 @@ We're interested in how well you have covered the most-awarded actors. Of all th
 - For this query the "count" clause has it's limitations hence the "Case when". This clause helps us categorise our given records in a coulmn and aggregate them to a singular record in another column. For instance We have the clause looking through the awards coulmn and counting the number of awards for a singular actor, then out putting it as a percentage of actors with a given number of awards in our film inventory.
 
 #### `Query 8`
-<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Query%208.png">
+<img src="https://github.com/Symo-Stuart/DVD_Rental_Store_MySQL_Project/blob/main/Queries/Query%208.png">
